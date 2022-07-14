@@ -41,16 +41,15 @@
 
 .footer__links-icons {
     margin-top: 0.5rem;
-}
-
-.footer__link-icons svg {
-    font-size: 24px;
-    color: index.$color-white;
-    margin: 0.5rem;
-    cursor: pointer;
-
-    &:hover {
-    color: index.$color-golden;
+    svg {
+        font-size: 24px;
+        color: index.$color-white;
+        margin: 0.5rem;
+        cursor: pointer;
+    
+        &:hover {
+        color: index.$color-golden;
+        }
     }
 }
 
