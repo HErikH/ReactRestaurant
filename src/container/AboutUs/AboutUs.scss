@@ -1,0 +1,79 @@
+@use '../../index';
+
+.aboutUs {
+    position: relative;
+}
+
+.aboutUs__overlay {
+    position: absolute;
+    & img {
+        width: 391px;
+        height: 415px;
+        z-index: 0;
+    }
+}
+
+.aboutUs__content {
+    width: 100%;
+    z-index: 2;
+}
+
+.aboutUs__content_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+    text-align: right;
+    & p {
+        color: index.$color-grey;
+        margin: 2rem 0;
+    }
+}
+
+.aboutUs__content_knife {
+    margin: 2rem 4rem;
+    & img {
+        height: 910px;
+    }
+}
+
+.aboutUs__content_history {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    text-align: left;
+    & p {
+        color: index.$color-grey;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .aboutUs__content_knife img {
+        height: 1110px;
+    }
+
+    .aboutUs__content_about p, .aboutUs__content_about p {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .aboutUs__content {
+        flex-direction: column;
+    }
+
+    .aboutUs__content_knife {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .aboutUs__overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}

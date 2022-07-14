@@ -1,0 +1,18 @@
+@use '../../index';
+
+.header {
+    background-color: index.$color-black;
+}
+
+.app__header-h1 {
+    font-size: clamp(50px, 9vw, 90px);
+    color: index.$color-golden;
+    font-family: index.$font-base;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+}
+
+.app__wrapper_img{
+    width: 80%;
+}

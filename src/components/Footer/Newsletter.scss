@@ -1,0 +1,60 @@
+@use '../../index';
+
+.newsLetter {
+    padding: 2rem 4rem;
+    border: 1px solid index.$color-golden;
+    background-color: index.$color-black;
+}
+
+.newsLetter__heading {
+    text-align: center;
+}
+
+.newsLetter__input {
+    flex-direction: row;
+    margin-top: 3rem;
+    input {
+        width: 620px;
+        border-color: index.$color-black;
+        border: 1px solid index.$color-golden;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: index.$font-base;
+        margin-right: 2rem;
+        padding: 0.75rem 1rem;
+    }
+    button {
+        width: max-content;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .newsLetter__input input {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .newsLetter__input {
+        text-align: center;
+        width: 100%;
+        input {
+            margin: 0 0 2rem 0;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .newsLetter__input {
+        padding: 2rem 0;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .newsLetter__heading h1 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+}
